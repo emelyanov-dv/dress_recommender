@@ -2,6 +2,11 @@
 
 Demo project for dress recommendations, based on uploaded image.
 
+
+Prototyping was done in [Colab](https://colab.research.google.com/drive/1esvpzlzLhfykj4c8VCd7bF01z8-QIUjr?usp=sharing).
+
+
+
 Server part: 
 * server.py – flask application;
 *	yolo_evaluator.py – main part, model loading and inference;
@@ -33,4 +38,3 @@ There are several steps:
 5. **client.py** creates folder, corresponding to a run number and saves responses images. 
 
 
-The **.ipynb** notebook shows the prototyping process steps. 
