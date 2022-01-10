@@ -1,10 +1,10 @@
 # Dress recommender service
 
-Demo project for dress recommendations, based on uploaded image.
+Demo project for dress recommendations, similar to dresses found at an uploaded image.
+Developed using: pytorch, YOLOv5, pretrained resnet-18.
 
 
 Prototyping was done in [Colab](https://colab.research.google.com/drive/1esvpzlzLhfykj4c8VCd7bF01z8-QIUjr?usp=sharing).
-
 
 
 Server part: 
@@ -36,5 +36,3 @@ There are several steps:
 3. Pretrained **resnet-18** gets embeddings, searches for the most similar in local folder using cosine similarity
 4. **server.py** responses with a mosaic image of similar dresses, found in local database
 5. **client.py** creates folder, corresponding to a run number and saves responses images. 
-
-
