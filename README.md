@@ -2,6 +2,10 @@
 
 Demo project for dress recommendations, based on uploaded image.
 
+Service is comprised of: 
+1. flask server application with swagger API definition
+2. client part with requests lib
+
 There are several steps: 
 1. Send POST request with an image using **client.py** 
 2. **server.py** gets an image, runs YOLOv5, crop detected dresses
