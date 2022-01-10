@@ -1,0 +1,60 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger REST Article
+
+produces:
+  - text/plain
+
+basePath: "/"
+
+# Paths supported by the server application
+paths:
+  /:
+    get:
+      operationId: "yolo_evaluator.get_info"
+      tags:
+        - "model"
+      description: "Get plate number"
+      responses:
+        200:
+          description: "Model info"
+          schema:
+            type: "object"
+            properties:
+              build:
+                type: "string"
+              model:
+                type: "string"
+              
+
+    post:
+      consumes:
+       - image/png
+       - image/jpeg
+      produces: 
+       - image/png
+       - image/jpeg
+      operationId: "yolo_evaluator.run"
+      tags:
+        - "model"
+      description: "Predict by image"
+      parameters:
+        - name: sample
+          in: body
+          description: "jpg or png image"
+          required: true
+          schema:
+            type: object
+      responses:
+        200:
+          description: "Prediction"
+          schema:
+            type: "string"
+       
+
+
+
+           
+              
