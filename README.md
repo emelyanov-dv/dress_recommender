@@ -4,7 +4,7 @@ Demo project for dress recommendations, similar to dresses found at an uploaded 
 Developed using: pytorch, YOLOv5, pretrained resnet-18.
 
 
-Prototyping was done in [Colab](https://colab.research.google.com/drive/1esvpzlzLhfykj4c8VCd7bF01z8-QIUjr?usp=sharing).
+Prototyping steps are available in [Colab notebook](https://colab.research.google.com/drive/1esvpzlzLhfykj4c8VCd7bF01z8-QIUjr?usp=sharing).
 
 
 Server part: 
