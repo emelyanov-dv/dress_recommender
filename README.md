@@ -2,9 +2,28 @@
 
 Demo project for dress recommendations, based on uploaded image.
 
-Service is comprised of: 
-1. flask server application with swagger API definition
-2. client part with requests lib
+Server part: 
+* server.py – flask application;
+*	yolo_evaluator.py – main part, model loading and inference;
+*	utilities.py – image processing helpers;
+*	swagger.yaml – API conf.
+
+Client part:
+* client.py - script for POST request sending;
+* requirements.txt - requirments for client.py;
+* valdataset - deepfashion dress validation part; 
+
+Client arguments: 
+* --file - send an image from local folder; 
+* --url - download from url and send an image;
+* --server - IP address of server app, default: localhost:9091
+
+Examples:
+* ~# python3 client.py --file valdataset/1.jpg
+* ~# python3 client.py --url https://media.sezane.com/image/upload/c_fill,d_placeholder_dark.png,fl_progressive:semi,h_816,q_auto:best,w_582/esayegh8c9rtnb0rqtqm.jpg
+* ~# python3 client.py --file valdataset/1.jpg --server localhost:9091
+
+
 
 There are several steps: 
 1. Send POST request with an image using **client.py** 
